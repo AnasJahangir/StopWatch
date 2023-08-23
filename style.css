@@ -5,20 +5,30 @@
     font-weight: normal;
     src: local('Digital Numbers Regular'), url('./font/DigitalNumbers-Regular.woff') format('woff');
     }
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
-    body{
+    .main-content{
         display: flex;
         align-items: center;
         height: 100vh;
         flex-direction: column;
-        background: #0a0a0a;
         color: #f3ca20;
         justify-content: center;
         font-family: 'Roboto', sans-serif;
      }
-    h1{
+     
+main{
+    background: #0a0a0a;
+
+}
+    .h1{
         font-size: 5.4rem;
         margin: 0;
+        font-family: 'Roboto', sans-serif;
+
     }
     .main{
         margin-top: 3rem;
@@ -63,17 +73,75 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f3ca20;
-    border-radius: 10px;
+    background: #555;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 10px;
-
+    background: #f3ca20;
   }
-  
+  footer{
+    background-color: #f3ca20;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+h1{
+    font-family: 'Roboto', sans-serif; 
+}
+.p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 20px ;
+    width: 60%;
+}
+
+ion-icon{
+    font-size: 30px;
+    margin-right: 20px;
+    color: black;
+}
+
+.anas{
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 900px){
+    .main-footer{
+        width: 80%;
+    }
+
+    .p{
+        font-size: 17px;
+        letter-spacing: 1px;
+        width: 80%;
+        line-height: 35px;   
+     }
+} 
+
+
+@media only screen and (max-width: 641px) {
+    .main-footer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 80%;
+    
+    }
+}
  @media only screen and (max-width: 550px) {
     .main{
         margin-top: 2rem;
@@ -89,7 +157,7 @@
         border: 1px solid;
         font-weight: 400    ;
     }
-    h1{
+    .h1{
         font-size: 55px;
     }
   }
@@ -106,7 +174,7 @@
         font-weight: 400;
     }  
     
-    h1{
+    .h1{
         font-size: 47px;
     }
     main{
@@ -116,3 +184,5 @@
   }
 
 
+
+ 
