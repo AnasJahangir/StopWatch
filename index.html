@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./favicon_io/favicon-32x32.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./favicon_io/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="./favicon_io/apple-touch-icon.png">
+</head>
+<body>
+
+    <div>
+        <h1 >Stop Watch</h1>
+    </div>
+    
+    <div class="main">
+        <div id="min">00</div>
+        <span>:</span>
+        <div id="sec">00</div>
+        <span>:</span>
+        <div id="milisec">00</div>
+    </div>
+
+    <div class="btn-con">
+        <button onclick="start()" id="btnStart">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button  onclick="reset()">Reset</button>
+
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

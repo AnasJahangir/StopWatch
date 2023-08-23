@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: 'Digital Numbers Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Digital Numbers Regular'), url('./font/DigitalNumbers-Regular.woff') format('woff');
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background: #0a0a0a;
+        color: #f3ca20;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+     }
+    h1{
+        font-size: 5.4rem;
+        margin: 0;
+    }
+    .main{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-family:'Digital Numbers Regular';
+        font-weight:normal;
+        font-size: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-con{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    button{
+        margin: 37px 17px;
+        font-size: 21px;
+        padding: 11px 35px;
+        border-radius: 25px;
+        background: #f3ca20;
+        color: black;
+        border: 2px solid;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400    ;
+    }
+
+    button:hover{
+        background: #d8b31d;
+    }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f3ca20;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+
+  }
+  
+ @media only screen and (max-width: 550px) {
+    .main{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size:38px;
+    
+    }
+    button{
+        margin: 17px 7px;
+        font-size: 16px;
+        padding:9px 27px;
+        border-radius: 25px;
+        border: 1px solid;
+        font-weight: 400    ;
+    }
+    h1{
+        font-size: 55px;
+    }
+  }
+ 
+  
+ @media only screen and (max-width: 330px){
+    
+    button{
+        margin: 16px 4px;
+        font-size: 14px;
+        padding: 10px 22px;
+        border-radius: 23px;
+        border: 1px solid;
+        font-weight: 400;
+    }  
+    
+    h1{
+        font-size: 47px;
+    }
+    main{
+        font-size: 36px;
+    
+    }
+  }
+
+
