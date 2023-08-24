@@ -57,13 +57,14 @@ main{
         border: 2px solid;
         cursor: pointer;
         font-family: 'Roboto', sans-serif;
-        font-weight: 400    ;
+        font-weight: 400;
+        outline:0;
     }
 
     button:hover{
-        background: #d8b31d;
+        background: #d2a216;
     }
-
+   
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -138,8 +139,29 @@ ion-icon{
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        width: 80%;
-    
+        width: 90%;
+        margin-bottom: 30px;
+        
+    }
+    .main-icons{
+        margin-top: 2.5rem;
+    }
+    .p{
+        font-size: 16px;
+        letter-spacing: 1px;
+        width: 90%;
+        line-height: 25px;   
+     }
+     ion-icon{
+        font-size: 25px;
+        margin-right: 20px;
+        color: black;
+    }
+    .anas{
+        font-size: 35px;
+    }
+    button{
+        cursor: none;
     }
 }
  @media only screen and (max-width: 550px) {
@@ -156,6 +178,8 @@ ion-icon{
         border-radius: 25px;
         border: 1px solid;
         font-weight: 400    ;
+        cursor: none;
+
     }
     .h1{
         font-size: 55px;
@@ -172,6 +196,8 @@ ion-icon{
         border-radius: 23px;
         border: 1px solid;
         font-weight: 400;
+        cursor: none;
+
     }  
     
     .h1{
