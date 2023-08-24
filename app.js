@@ -4,10 +4,16 @@ var getSec = document.getElementById("sec");
 var getMilisec = document.getElementById("milisec");
 
 var btnStart =  document.getElementById("btnStart");
+var btnStop =  document.getElementById("btnStop");
+var btnReset =  document.getElementById("btnReset");
 
-var mint =0;
-var sec =0;
-var milisec =0;
+var colorSame = "#f3ca20";
+var colorActiv = "#d2a216"
+
+
+var mint = 0;
+var sec = 0;
+var milisec = 0;
 var timeStop;
 
 
@@ -48,17 +54,24 @@ function start() {
     if(mint > 9 ){
         getMin.innerHTML =  mint
     }else{
-        getMin.innerHTML = "0" +mint
+        getMin.innerHTML = "0"+mint
     }
 
    
 },10)
 btnStart.disabled = true
+btnStart.style.background = colorActiv;
+btnStop.style.background = colorSame;
+btnReset.style.background = colorSame;
+
 }
 
 function stop() {
     clearInterval(timeStop)
     btnStart.disabled = false
+    btnStart.style.background = colorSame;
+    btnStop.style.background = colorActiv;
+    btnReset.style.background = colorSame;
 }
 
 function reset() {
@@ -71,4 +84,7 @@ function reset() {
     getSec.innerHTML = "00"
     getMin.innerHTML = "00"
     btnStart.disabled = false
+    btnStart.style.background = colorSame;
+    btnStop.style.background = colorSame;
+    btnReset.style.background = colorActiv;
 }
