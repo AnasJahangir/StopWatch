@@ -22,43 +22,46 @@ function start() {
     milisec++
 
 
-    if(milisec > 10 ){
+    if(milisec >= 10 ){
     getMilisec.innerHTML =  milisec
     }else{
     getMilisec.innerHTML = '0'+ milisec
     }
 
-    
-    
-
-    if (milisec >= 100) {
-        milisec = 0;
+    if (milisec >= 60) {
+        milisec = "0"+0;
         getMilisec.innerHTML = milisec
         sec++
        
     }
 
-    if(sec > '9' ){
+    if(sec > 9 ){
         getSec.innerHTML =  sec
     }else{
-    getSec.innerHTML = "0" +sec
+        getSec.innerHTML = "0" +sec
     }
 
     
-    if (sec >= 60) {
+    if (sec > 60) {
         sec = 0;
         getSec.innerHTML = sec
         mint++
     }
 
-    if(mint > 9 ){
+    if(mint >= 10 ){
         getMin.innerHTML =  mint
     }else{
         getMin.innerHTML = "0"+mint
     }
+     
+    if (mint > 60) {
+        mint = 0;
+        getMin.innerHTML = mint
 
+        
+    }
    
-},10)
+},16.66666666)
 btnStart.disabled = true
 btnStart.style.background = colorActiv;
 btnStop.style.background = colorSame;
